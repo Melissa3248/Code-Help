@@ -1,5 +1,7 @@
 # TTIC-specific Information
 
+__TTIC help page: https://slurm.ttic.edu/__
+
 Logging in to TTIC:
 
 ```ssh your_username@slurm.ttic.edu```
