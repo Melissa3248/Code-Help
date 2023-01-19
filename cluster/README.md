@@ -8,9 +8,9 @@ Submit a .sh file (file is scheduled to run when resources are available):
 
 ```sbatch your_file.sh```
 
-Sample header for a .sh file (different for each cluster): 
+Sample header for a .sh file (different for each cluster and whether the job uses GPUs or CPUs): 
 
-See ```{TTIC, LLNL, RCC}/sample.sh```
+See ```{TTIC, LLNL, RCC}/sample_{cpu,gpu}.sh```
 
 Copy a file from your local computer to the cluster (assumed to be executed in the local file's directory):
 
@@ -20,9 +20,21 @@ Copy a folder from your local computer to the cluster (assumed to be executed in
 
 ```scp local_folder username@loginemail:path/to/destination/folder```
 
+Cancel all running jobs associated with your account:
 
-Convert a file to a non-Windows encoding:
-```dos2unix filename```
+```scancel -u your_username```
+
+Stop a specific job:
+
+```scancel <job#>```
+
+Load modules:
+
+```module load module_name```
+
+Clear loaded modules:
+
+```module purge```
 
 # Conda
 
@@ -34,6 +46,10 @@ Create a conda environment with a specific Python version:
 
 ```conda create -n my_conda_env3.9 python=3.9```
 
-Create a conda environment with a previous Python and Pytorch versions: (More details at https://pytorch.org/get-started/previous-versions/)
+Create a conda environment with a previous Python and Pytorch version: (More details at https://pytorch.org/get-started/previous-versions/)
 
 Example: ```conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch```
+
+Install packages:
+
+```conda install package_name``` or ```pip install package_name```

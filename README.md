@@ -3,7 +3,7 @@
 
 Explanation of folders: 
 
-- __cluster__: contains helpful commands for working on Slurm-based clusters. Within this folder, there are three subfolders containing information specific to the TTIC, LLNL, and RCC clusters.
+- __cluster__: contains helpful commands for working on Slurm-based clusters. Within this folder, there are three subfolders containing information specific to the TTIC, LLNL, and RCC clusters (still under construction).
 - __resolved_errors__: contains reports of error messages along with the lines of code executed that resolved the issue
 - __scripts__: contains general purpose code files 
 
