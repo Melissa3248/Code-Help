@@ -17,3 +17,18 @@ Path to your own home directory:
 Logging out of the TTIC cluster:
 
 ```exit```
+
+## Useful commands
+
+Request GPU resources for an interactive job (see the TTIC help page for customization options):
+
+```srun -p contrib-gpu --pty bash```
+
+Request CPU resources for an interactive job: 
+
+```TO DO```
+
+Check the presence of a GPU:
+
+```nvidia-smi```
+
