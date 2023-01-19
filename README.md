@@ -13,10 +13,13 @@ Explanation of folders:
 TO DO
 
 Add all changed files to be committed:
+
 ```git add -A```
 
 Commit and add a short, descriptive message about the changes:
+
 ```git commit -m "message"```
 
 Push changes to Github:
+
 ```git push origin main```
