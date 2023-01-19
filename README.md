@@ -16,9 +16,9 @@ Cloning this respository:
 
 Initializing Github to track changes in your local copy of the Code-Help folder (commands should be run in the Code-Help folder):
 
-```git init
+```git init```
 
-git remote add origin git@github.com:Melissa3248/Code-Help.git```
+```git remote add origin git@github.com:Melissa3248/Code-Help.git```
 
 
 Add all changed files to be committed:
