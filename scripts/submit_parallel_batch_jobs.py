@@ -20,9 +20,9 @@ def run_job(temp_job_folder, t_start, t_stop):
         fh.writelines(” --start_t {} \\\n”.format(t_start))
         fh.writelines(” --stop_t {} \\\n”.format(t_stop))
     os.system(‘sbatch -n 1 -c 64 {}’.format(job_file)) ###################### WARNING: comment this line the first time
-                                                                            #          you run this file to check that the 
-                                                                            #          .sh files came out as inteneded. It may 
-                                                                            #          also be a good idea to run one of the 
+                                                                            #          you run this file to check that the
+                                                                            #          .sh files came out as inteneded. It may
+                                                                            #          also be a good idea to run one of the
                                                                             #          generated .sh files.
 count = 0
 
