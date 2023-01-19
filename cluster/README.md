@@ -8,7 +8,9 @@ Submit a .sh file (file is scheduled to run when resources are available):
 
 ```sbatch your_file.sh```
 
-Sample header for a .sh file: See ```sample.sh```
+Sample header for a .sh file (different for each cluster): 
+
+See ```{TTIC, LLNL, RCC}/sample.sh```
 
 Copy a file from your local computer to the cluster (assumed to be executed in the local file's directory):
 

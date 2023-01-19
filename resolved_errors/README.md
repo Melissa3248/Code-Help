@@ -1,2 +1,7 @@
-# Getting Started
-## Setting up Github to contribute to this repository
+# Errors
+
+Cleaning your conda environment (to free up some storage space):
+
+```conda clean```
+
+```conda clean -p```
