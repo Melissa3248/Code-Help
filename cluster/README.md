@@ -20,21 +20,13 @@ Copy a folder from your local computer to the cluster (assumed to be executed in
 
 ```scp local_folder username@loginemail:path/to/destination/folder```
 
-Cancel all running jobs associated with your account:
-
-```scancel -u your_username```
-
-Stop a specific job:
+Cancel a specific scheduled job:
 
 ```scancel <job#>```
 
-Load modules:
+Cancel all jobs associated with your account:
 
-```module load module_name```
-
-Clear loaded modules:
-
-```module purge```
+```scancel -u your_username```
 
 # Conda
 
@@ -49,7 +41,3 @@ Create a conda environment with a specific Python version:
 Create a conda environment with a previous Python and Pytorch version: (More details at https://pytorch.org/get-started/previous-versions/)
 
 Example: ```conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch```
-
-Install packages:
-
-```conda install package_name``` or ```pip install package_name```

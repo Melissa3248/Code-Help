@@ -12,13 +12,11 @@ View information about all running jobs:
 
 ```squeue --format="%.18i %.9P %.30j %.8u %.8T %.10M %.9l %.6D %R" --me```
 
-
 Query real-time information about a running job:
 
 ```sstat -j <job#>```
 
 Check submitted jobs (should only run this command once if necessary, it disrupts scheduling):
-
 
 ```sqs```
 
