@@ -32,3 +32,7 @@ Commit and add a short, descriptive message about the changes:
 Push changes to Github:
 
 ```git push origin main```
+
+Pull new changes made to the respository to a local copy:
+
+```git pull origin main```

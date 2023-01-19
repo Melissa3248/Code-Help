@@ -21,3 +21,17 @@ Copy a folder from your local computer to the cluster (assumed to be executed in
 
 Convert a file to a non-Windows encoding:
 ```dos2unix filename```
+
+# Conda
+
+Create a conda environment:
+
+```conda create -n my_env_name```
+
+Create a conda environment with a specific Python version:
+
+```conda create -n my_conda_env3.9 python=3.9```
+
+Create a conda environment with a previous Python and Pytorch versions: (More details at https://pytorch.org/get-started/previous-versions/)
+
+Example: ```conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch```
