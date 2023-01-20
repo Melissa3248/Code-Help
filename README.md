@@ -5,7 +5,7 @@ Explanation of folders:
 
 - __cluster/__: contains helpful commands for working on Slurm-based clusters. The README has tips on using conda for managing Python environments and tips for setting up SSH for accessing remote clusters.
     - __TTIC/__: Information specific to the TTIC cluster.
-    - __LLNL/__: Information specific to Lawrence Livermore National Laboratory's computing cluster.
+    - __LBNL/__: Information specific to Lawrence Berkeley National Laboratory's computing cluster.
     - __RCC/__: Information specific to UChicago Research Computing Center's resources.
 - __resolved_errors/__: contains reports of error messages along with the lines of code executed that resolved the issue
 - __LaTeX_paper_writing/__: Tips (and links to Overleaf guides) for preparing documents in LaTeX.
