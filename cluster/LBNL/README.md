@@ -2,11 +2,11 @@
 
 Request interactive GPU resources:
 
-```salloc --nodes # --qos interactive --time 00:15:00 --constraint gpu --gpus # --account=m****_g```
+```salloc --nodes # --qos interactive --time HH:MM:SS --constraint gpu --gpus # --account=m****_g```
 
 Request interactive CPU resources:
 
-```salloc --nodes # --qos interactive --time 00:15:00 --constraint cpu --account=m****```
+```salloc --nodes # --qos interactive --time HH:MM:SS --constraint cpu --account=m****```
 
 View information about all running jobs:
 
