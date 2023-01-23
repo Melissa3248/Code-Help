@@ -21,3 +21,6 @@ Check submitted jobs (should only run this command once if necessary, it disrupt
 ```sqs```
 
 
+Sample .sh file to submit a CPU-based job: See ```sample_cpu.sh```
+
+Sample .sh file to submit a GPU-based job: see ```sample_gpu.sh```
