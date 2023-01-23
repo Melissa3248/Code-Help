@@ -2,7 +2,7 @@
 
 __TTIC help page: https://slurm.ttic.edu/__
 
-If your computer is connected to the eduroam wifi network, you can run this line in your terminal to log in:
+If your computer is connected to the eduroam wifi network via your UChicago account, you can run this line in your terminal to log in:
 
 ```ssh your_username@slurm.ttic.edu```
 
@@ -14,7 +14,7 @@ iOS: https://uchicago.service-now.com/it?id=kb_article&kb=KB06000727
 
 MacOS: https://uchicago.service-now.com/it?id=kb_article&kb=KB06000725
 
-After downloading Cisco AnyConnect, connect to '''vpn.uchicago.edu'''. This will open a window to login to your UChicago account using 2FA.
+After downloading Cisco AnyConnect, connect to ```vpn.uchicago.edu```. This will open a window to login to your UChicago account using 2FA.
 
 Path to the shared Willett-group directory where computing should be done:
 
