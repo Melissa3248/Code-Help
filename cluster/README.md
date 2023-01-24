@@ -32,6 +32,8 @@ Cancel all jobs associated with your account:
 
 ```scancel -u your_username```
 
+Enable keyboard copy and paste in a Windows terminal: https://www.maketecheasier.com/enable-copy-paste-command-prompt-windows10/#:~:text=Use%20the%20approved%20keyboard%20shortcut,paste%20using%20a%20right%2Dclick.
+
 # Conda
 
 Create a conda environment:
