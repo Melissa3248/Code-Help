@@ -44,3 +44,27 @@ Check the presence of a GPU:
 
 ```nvidia-smi```
 
+### TMUX
+
+When you ssh to the SLURM server from your laptop, you request a GPU/CPU to run your experiemnts. However, if your laptop turns off or connection breaks, it may lead to loosing GPU/CPU too. To avoid it, TMUX can be used. 
+
+After ssh'ing to the server (but before requestiong CPU/GPU), type 
+
+```tmux```
+
+or 
+
+```tmux new -s sessionname```
+
+
+It'll create a new TMUX session. This session will remain even after you accidentually discinnect from the cluster. In this tmux session, you can create new kinda terminal windows via ```ctrl b c``` and move between them via ```ctrl b n```(next) or  ```ctrl b p```(previous). Through these windows you can request and submit different jobs, and they run no matter if you're connected to a server.
+
+After you create a TMUX session and connectiong to a server again you can type 
+
+```tmux a```
+```tmux a -t sessionname```
+
+to attach to the exsisting tmux session. 
+
+More shortcuts are available [here](https://gist.github.com/MohamedAlaa/2961058).
+
