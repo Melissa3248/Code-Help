@@ -2,7 +2,7 @@
 
 Cleaning your conda environment (to free up some storage space, remove corrupted files):
 
-```conda clean -all```
+```conda clean --all```
 
 ```conda clean -p```
 
