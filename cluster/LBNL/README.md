@@ -12,9 +12,6 @@ View information about all running jobs:
 
 ```squeue --format="%.18i %.9P %.30j %.8u %.8T %.10M %.9l %.6D %R" --me```
 
-Show jobs that have scheduled estimates for start times: 
-
-```squeue --sort=S | egrep -i -v 'n/a|null'```
 
 Query real-time information about a running job:
 
