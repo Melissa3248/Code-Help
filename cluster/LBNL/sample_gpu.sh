@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #SBATCH --time=06:00:00
-#SBATCH -C gpu
+#SBATCH -C gpu # change gpu to gpu&hbm80g to request an 80GB memory node 
 #SBATCH --account=m****_g
 #SBATCH --nodes=16
 #SBATCH --qos=regular
