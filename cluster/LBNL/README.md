@@ -21,6 +21,9 @@ Check submitted jobs (should only run this command once if necessary, it disrupt
 
 ```sqs```
 
+Check the current allocation resources used/remaining:
+
+```iris```
 
 Sample .sh file to submit a CPU-based job: See ```sample_cpu.sh```
 
