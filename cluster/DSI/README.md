@@ -1,5 +1,7 @@
 # DSI Cluster-specific Information
 
+A more detailed page for getting setup on the DSI cluster can be found at: https://github.com/meliao/cluster_startup
+
 The login command to access the login node is 
 ```
 ssh your_cnetid@fe01.ds.uchicago.edu
