@@ -2,6 +2,20 @@
 
 __TTIC help page: https://slurm.ttic.edu/__
 
+Path to the shared Willett-group directory where computing should be done:
+
+```/share/data/willett-group```
+
+Path to your own home directory:
+
+```/home-nfs/your_username```
+
+Logging out of the TTIC cluster:
+
+```exit```
+
+The TTIC cluster has different partitions, explained in this section of the documentation: [link](https://slurm.ttic.edu/#understanding-partitions). Members of the Willett group have access to the `willett-gpu` and `willett-gpu`. 
+
 ## Connecting off campus
 
 If your computer is connected to the eduroam wifi network via your UChicago account, you can run this line in your terminal to log in:
@@ -17,22 +31,6 @@ iOS: https://uchicago.service-now.com/it?id=kb_article&kb=KB06000727
 MacOS: https://uchicago.service-now.com/it?id=kb_article&kb=KB06000725
 
 After downloading Cisco AnyConnect, connect to ```vpn.uchicago.edu```. This will open a window to login to your UChicago account using 2FA.
-
-## Filepath information 
-
-Path to the shared Willett-group directory where computing should be done:
-
-```/share/data/willett-group```
-
-Path to your own home directory:
-
-```/home-nfs/your_username```
-
-Logging out of the TTIC cluster:
-
-```exit```
-
-The TTIC cluster has different partitions, explained in this section of the documentation: [link](https://slurm.ttic.edu/#understanding-partitions). Members of the Willett group have access to the `willett-gpu` and `willett-gpu`. 
 
 ## Useful commands
 
