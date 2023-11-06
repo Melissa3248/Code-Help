@@ -7,6 +7,10 @@ The login command to access the login node is
 ssh your_cnetid@fe01.ds.uchicago.edu
 ```
 
+Filepath to share data among group members
+```
+/net/projects/willettlab/groupshare/
+```
 
 Logging out of the DSI cluster:
 
