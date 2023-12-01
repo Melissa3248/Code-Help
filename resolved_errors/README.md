@@ -20,3 +20,7 @@ Change permissions of files that only have read access (no write access):
 (chmod 755 allows everyone to read and execute the file, but only the owner and group have write access.)
 
 ```chmod 755 /path/to/file```
+
+If GitHub does not allow you to commit with a message, run the following line, type the commit message in the file that opens, and :wq the file:
+
+```git commit -v```
