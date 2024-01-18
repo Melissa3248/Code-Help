@@ -24,3 +24,7 @@ Change permissions of files that only have read access (no write access):
 If GitHub does not allow you to commit with a message, run the following line, type the commit message in the file that opens, and :wq the file:
 
 ```git commit -v```
+
+Resolving the Github error: ```remote: error: GH007: Your push would publish a private email address.```
+
+https://stackoverflow.com/questions/43863522/error-your-push-would-publish-a-private-email-address
