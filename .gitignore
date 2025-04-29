@@ -1,0 +1,8 @@
+# Generally you don't want to track .venv folders
+*.venv
+
+# Add folders/files here you wouldn't want to track on github (experiment results, model weights, etc.)
+# For example, imagine I make a folder temp_job with experiment results, and also save a bunch of model
+# weights as .eqx files (Equinox is the best). Then, I add the following lines to ignore those:
+temp_job
+*.eqx

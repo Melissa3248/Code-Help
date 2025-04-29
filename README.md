@@ -1,7 +1,7 @@
 # Getting Started
-## Organization of this Github page 
+## Organization of this Github page
 
-Explanation of folders: 
+Explanation of folders:
 
 - __cluster/__: contains helpful commands for working on Slurm-based clusters. The README has tips on using conda for managing Python environments and tips for setting up SSH for accessing remote clusters.
     - __TTIC/__: Information specific to the TTIC cluster.
@@ -9,7 +9,10 @@ Explanation of folders:
     - __RCC/__: Information specific to UChicago Research Computing Center's resources.
 - __resolved_errors/__: contains reports of error messages along with the lines of code executed that resolved the issue
 - __LaTeX_paper_writing/__: Tips (and links to Overleaf guides) for preparing documents in LaTeX.
-- __scripts/__: contains general purpose code files 
+- __scripts/__: contains general purpose code files
+
+The gitignore file is also meant to be educational (while also function as the actual gitignore file).
+
 
 ## How to Contribute
 You can contribute in different ways, including asking a question or adding some knowledge:
@@ -22,7 +25,7 @@ The preferred way to ask a question is to create an issue on GitHub. Here is a [
 
 To add to the repository, you'll have to clone the repository to your personal computer, edit one or more of the files, and push the changes to GitHub:
 
-1. Clone the repository to your personal computer. This means using git to make a local copy of all of the files on your computer, so you can edit them. You can do this with the following command: 
+1. Clone the repository to your personal computer. This means using git to make a local copy of all of the files on your computer, so you can edit them. You can do this with the following command:
     ```
     git clone https://github.com/Melissa3248/Code-Help.git
     ```
@@ -30,12 +33,12 @@ To add to the repository, you'll have to clone the repository to your personal c
     ```
     git pull origin main
     ```
-3. Edit one or more of the files. 
-4. Push the changes to GitHub. This takes a few commands. First, you'll want to add the files you've changed. You can do this by running the following command to add all files at once. 
+3. Edit one or more of the files.
+4. Push the changes to GitHub. This takes a few commands. First, you'll want to add the files you've changed. You can do this by running the following command to add all files at once.
     ```
     git add -A
     ```
-    If you made some changes that you don't want to push, you can run `git add <file_name>` to add files one at a time. If you aren't sure which files you've changed, you can use `git status` to show which files have been changed. 
+    If you made some changes that you don't want to push, you can run `git add <file_name>` to add files one at a time. If you aren't sure which files you've changed, you can use `git status` to show which files have been changed.
     Next, you want to commit and add a short, descriptive message about the changes:
 
     ```
