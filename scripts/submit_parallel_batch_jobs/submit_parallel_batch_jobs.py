@@ -41,6 +41,7 @@ def run_job(temp_job_folder, job_name, param_dict):
     job_file = f"{temp_job_folder}/{job_title}.sh"
 
     with open(job_file, "w") as fh:
+        # TODO for Andrew: Make functions which make this automatically based on what cluster is being used
         # The .sh file header may be different depending on the cluster
         fh.writelines("#!/bin/bash\n")
         fh.writelines("#SBATCH -n 1\n")  # number of nodes to allocate for this job
