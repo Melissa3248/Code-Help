@@ -75,9 +75,9 @@ def run_job(temp_job_folder, job_name, param_dict):
 count = 0
 
 parameter_names = [
-    "param_a",
-    "param_λ",
-]  # I don't know if slurm accepts arbitrary unicode characters, I just thought this would be a funny name.
+    "param_1",
+    "param_2",
+]
 
 # ts stores a list of values that correspond to one .sh file. The length of ts is the number of .sh files you would like to create and submit jobs for.
 # Edit the values of this variable for your own code
