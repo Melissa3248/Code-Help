@@ -1,14 +1,23 @@
 import argparse
 import numpy as np
 
-def sample_function(p1,p2):
-    return p1*p2
+
+def sample_function(p1, p2):
+    return p1 * p2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--param_1", type=int, help = "descriptive information about what this variable is")
-    parser.add_argument("--param_2", type=int, help = "descriptive information about what this variable is")
+    parser.add_argument(
+        "--param_1",
+        type=int,
+        help="descriptive information about what this variable is",
+    )
+    parser.add_argument(
+        "--param_2",
+        type=int,
+        help="descriptive information about what this variable is",
+    )
     args = parser.parse_args()
 
     param_1 = args.param_1
