@@ -11,7 +11,7 @@ Explanation of folders:
 - __LaTeX_paper_writing/__: Tips (and links to Overleaf guides) for preparing documents in LaTeX.
 - __scripts/__: contains general purpose code files
 
-The gitignore file is also meant to be educational (while also function as the actual gitignore file).
+The gitignore file is also meant to be educational (while also functioning as the actual gitignore file for the repo).
 
 
 ## How to Contribute
