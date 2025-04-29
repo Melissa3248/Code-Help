@@ -63,9 +63,7 @@ def run_job(temp_job_folder, job_name, param_dict):
         for name, param in param_dict.items():
             fh.writelines(f"--{name} {param} \\\n")
 
-    # os.system(
-    #     "sbatch {}".format(job_file)
-    # )  ###################### WARNING: comment this line the first time
+    os.system("sbatch {}".format(job_file))  # WARNING: comment this line the first time
     #          you run this file to check that the
     #          .sh files came out as inteneded. It may
     #          also be a good idea to run one of the
