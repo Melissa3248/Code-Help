@@ -18,7 +18,7 @@
 import os
 
 # names a folder to be added in the current working directory named 'temp_job'
-temp_job_folder = ‘temp_job’
+temp_job_folder = "temp_job"
 
 
 # creates a folder in the current working directory named 'temp_job'
@@ -29,8 +29,8 @@ mkdir_p(temp_job_folder)
 
 # given input parameters, writes a .sh file and submits a sbatch job
 def run_job(temp_job_folder, job_name, param_1, param_2):
-    job_file = ‘{}/{}_{}_{}.sh’.format(temp_job_folder, job_name, param_1, param_2)
-    with open(job_file,‘w’) as fh:
+    job_file = "{}/{}_{}_{}.sh".format(temp_job_folder, job_name, param_1, param_2)
+    with open(job_file,"w") as fh:
         # the .sh file header may be different depending on the cluster
         fh.writelines("#!/bin/bash\n")
         fh.writelines("#SBATCH -n 1\n") # number of nodes to allocate for this job
@@ -39,7 +39,7 @@ def run_job(temp_job_folder, job_name, param_1, param_2):
         fh.writelines("python /path/to/my_python_script.py\\\n") ################################# change python script
         fh.writelines("--param_1 {} \\\n".format(param_1))
         fh.writelines("--param_2 {} \\\n".format(param_2))
-    os.system(‘sbatch {}’.format(job_file)) ###################### WARNING: comment this line the first time
+    os.system("sbatch {}".format(job_file)) ###################### WARNING: comment this line the first time
                                                                             #          you run this file to check that the
                                                                             #          .sh files came out as inteneded. It may
                                                                             #          also be a good idea to run one of the
