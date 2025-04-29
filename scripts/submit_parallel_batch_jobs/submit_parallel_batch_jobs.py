@@ -9,13 +9,15 @@
 #    a specification of one .sh file. The first entry should be the title of the job, and the other entries should
 #    be the arguments in parameter_names. The length of ts should correspond to the number of .sh files you would like
 #    to submit jobs for.
-# 4. Edit the .sh header in the run_job function to be consistent with a typical .sh header for your cluster. (lines 42-45)
-#    See Code-Help/cluster/{TTIC,LBNL,RCC} for example .sh files.
+# 4. Plug in the arguments to header with arguments for the cluster.
 # 5. Comment out line 50 on your first run of this code to in order to check that the .sh files produced are correct.
 #    It may also be good to run one .sh file produced to see if the desired results are produced w/o error.
 ##################################################################################################################
 
 import os
+
+from cluster_headers import header
+
 
 # names a folder to be added in the current working directory named 'temp_job'
 temp_job_folder = "temp_job"
@@ -40,13 +42,25 @@ def run_job(temp_job_folder, job_name, param_dict):
 
     job_file = f"{temp_job_folder}/{job_title}.sh"
 
+    # If you want to pass in arguments to SBATCH that I didn't set up in header function, put them in this dictionary.
+    # name:value will be converted to:
+    # #SBATCH --{name}={value}
+    kwargs = {"example_1": "val_1", "example_2": "val_2"}
+
+    job_header = header(
+        job_name=job_name,
+        partition="willett-gpu",
+        logs_folder=temp_job_folder,
+        time_limit=None,
+        gpu_type="nvidia_l40s",
+        num_gpus=1,
+        memory_in_gigabytes=24,
+        cpus_per_task=8,
+        **kwargs,
+    )
+
     with open(job_file, "w") as fh:
-        # TODO for Andrew: Make functions which make this automatically based on what cluster is being used
-        # The .sh file header may be different depending on the cluster
-        fh.writelines("#!/bin/bash\n")
-        fh.writelines("#SBATCH -n 1\n")  # number of nodes to allocate for this job
-        fh.writelines("#SBATCH -t HH:MM:SS\n")  # max amount of time for the job
-        fh.writelines(f"#SBATCH -j {job_title} \n")
+        fh.writelines(job_header)
 
         # If you want to create a virtual environment and install dependencies using requirements.txt, leave these lines
         # Otherwise comment them out
