@@ -9,8 +9,9 @@
 #    a specification of one .sh file. The first entry should be the title of the job, and the other entries should
 #    be the arguments in parameter_names. The length of ts should correspond to the number of .sh files you would like
 #    to submit jobs for.
-# 4. Plug in the arguments to header with arguments for the cluster.
-# 5. Comment out line 50 on your first run of this code to in order to check that the .sh files produced are correct.
+# 4. Plug in the arguments to header with arguments for the cluster, including putting any custom arguments into the
+#    kwargs dict.
+# 5. Comment out line 126 on your first run of this code to in order to check that the .sh files produced are correct.
 #    It may also be good to run one .sh file produced to see if the desired results are produced w/o error.
 ##################################################################################################################
 
