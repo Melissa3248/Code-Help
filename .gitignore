@@ -6,3 +6,4 @@
 # weights as .eqx files (Equinox is the best). Then, I add the following lines to ignore those:
 temp_job
 *.eqx
+*__pycache__
