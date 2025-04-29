@@ -47,7 +47,8 @@ def run_job(temp_job_folder, job_name, param_dict):
         fh.writelines("#SBATCH -t HH:MM:SS\n")  # max amount of time for the job
         fh.writelines(f"#SBATCH -j {job_title} \n")
 
-        # If you want to create a virtual environment and install dependencies using requirements.txt, uncomment these lines
+        # If you want to create a virtual environment and install dependencies using requirements.txt, leave these lines
+        # Otherwise comment them out
         fh.writelines(
             f"if [! -d {temp_job_folder}/.venv; then \n   python -m venv {temp_job_folder}/.venv \nfi\n"
         )
