@@ -232,14 +232,14 @@ class Database:
         Load most recent dataset corresponding to the given parameters
         """
         read_query = f"""
-SELECT 
-    id
-FROM
-    datasets
-WHERE
-    datasets.ds_param_1 = {ds_param_1} AND
-    datasets.ds_param_2 = {ds_param_2}
-"""
+        SELECT 
+            id
+        FROM
+            datasets
+        WHERE
+            datasets.ds_param_1 = {ds_param_1} AND
+            datasets.ds_param_2 = {ds_param_2}
+        """
 
         row = self.execute_read(read_query)[-1]
         id = row[0]
@@ -342,13 +342,13 @@ WHERE
         Load VAE with given ID
         """
         read_query = f"""
-SELECT 
-    vae_param_1, vae_param_2, dataset_id, checkpoint_id
-FROM
-    vae
-WHERE
-    vae.id = {id}
-"""
+        SELECT 
+            vae_param_1, vae_param_2, dataset_id, checkpoint_id
+        FROM
+            vae
+        WHERE
+            vae.id = {id}
+        """
 
         row = self.execute_read(read_query)[-1]
         vae_param_1, vae_param_2, dataset_id, checkpoint_id = row
