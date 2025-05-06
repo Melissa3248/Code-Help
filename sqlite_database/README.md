@@ -1,0 +1,2 @@
+The database.py file contains an example implementation of a Database. In it, we imagine we have a list of datasets with some parameters (ds_param_1, ds_param_2), an encoding model of type VAE with parameters (vae_param_1, vae_param_2), and a generation model of type DDPM with parameters (ddpm_param_1, ddpm_param_2) which is trained on the latents of the VAE.
+This kind of pattern is common when training e.g. stable diffusion models, and shows the power of this kind of database in keeping track of the relationships between these three objects.
